@@ -13,14 +13,17 @@
     <style>
 		.nav-link.active {
         color: red !important;
-      }
+ 	     } /*active 클래스가 들어간 메뉴는 색을 빨간색으로 !
+		 !important는 bootstrap보다 우선순위가 높게 적용됨*/
 	</style>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
-    <nav
-      class="navbar navbar-expand-md navbar-light bg-light fixed-top active"
+	<!-- 스크롤스파이를 사용해 페이지 스크롤시 현재 섹션에 맞게 메뉴에 표시됨! -->
+    <!-- 네브바 -->
+	<nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top"
       id="nav-scroll" 
-    >
+    > 
       <div class="container">
 		<!-- 제목 -->
         <a href="#" class="navbar-brand">Portfolio</a>
