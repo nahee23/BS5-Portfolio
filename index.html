@@ -10,12 +10,16 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <title>Portfolio Website</title>
-    <style></style>
+    <style>
+		.nav-link.active {
+        color: red !important;
+      }
+	</style>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
     <nav
-      class="navbar navbar-expand-md navbar-light bg-light fixed-top"
-      id="nav-scroll"
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top active"
+      id="nav-scroll" 
     >
       <div class="container">
 		<!-- 제목 -->
@@ -37,13 +41,13 @@
               <a href="#about" class="nav-link">About</a>
             </li>
 			<li class="nav-item">
-				<a href="#Portfolio" class="nav-link">Portfolio</a>
+				<a href="#portfolio" class="nav-link">Portfolio</a>
 			</li>
 			<li class="nav-item">
-				<a href="#Blog" class="nav-link">Blog</a>
+				<a href="#blog" class="nav-link">Blog</a>
 			</li>
 			<li class="nav-item"></li>
-				<a href="#Contact" class="nav-link">Contact</a>
+				<a href="#contact" class="nav-link">Contact</a>
 			</li>
           </ul>
         </div>
@@ -209,14 +213,15 @@
 		</div>
 	  </section>
 	  <!-- 컨택트 섹션 끝 -->
-	  <!-- 푸터 시작 -->
+	  <!-- 푸터 섹션 시작 -->
 	  <footer class="bg-light">
 		<div class="container text-center">
 		  <p class="mb-0 py-3 fs-5">
-			© 2022 부산IT교육센터 All rights reserved.
+			© 2024 부산IT교육센터 All rights reserved.
 			<a href="#본인블로그주소" class="text-danger fst-italic" target="_blank">MyBlog</a>
 		  </p>
 		</div>
 	  </footer>
+	  <!-- 푸터 섹션 끝 -->
   </body>
 </html>
